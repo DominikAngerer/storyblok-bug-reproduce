@@ -59,7 +59,7 @@ class StoryblokEntry extends React.Component {
       this.loadStory(payload)
     })
 
-    /*sb.on("input", payload => {
+    sb.on("input", payload => {
       console.log(payload)
       // if (this.state.story && payload.story.id === this.state.story.id) {
       payload.story.content = sb.addComments(
@@ -70,7 +70,7 @@ class StoryblokEntry extends React.Component {
         story: { ...payload.story },
       }))
       // }
-    })*/
+    })
 
     sb.pingEditor(() => {
       if (sb.inEditor) {
